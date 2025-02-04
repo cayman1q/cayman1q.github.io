@@ -1,45 +1,29 @@
-/* ตั้งค่าพื้นฐาน */
 body {
-    background-image: url('horror-background.jpg'); /* เปลี่ยนเป็น URL รูปภาพของคุณ */
-    background-size: cover;
-    background-attachment: fixed;
-}
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-/* Container สำหรับจัดเนื้อหา */
 .container {
     width: 80%;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #262626; /* พื้นหลังสีเทาเข้ม */
-    border: 1px solid #444; /* กรอบสีเทา */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* เงาดำ */
 }
 
-/* Header */
-@keyframes flicker {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
-}
-
-header h1 {
-    animation: flicker 2s infinite; /* ข้อความกระพริบ */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
 }
 
 header h1 {
     text-align: center;
-    font-size: 3em;
-    color: #8b0000; /* สีแดงเลือด */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* เงาข้อความ */
-    margin: 0;
 }
 
-/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    margin: 10px 0;
 }
 
 nav ul li {
@@ -48,27 +32,12 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #8b0000; /* สีแดงเลือด */
+    color: #fff;
     text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #ff0000; /* สีแดงสดเมื่อโฮเวอร์ */
-}
-
-/* ส่วนเนื้อหาข่าวสาร */
 .news-section {
     margin: 20px 0;
-}
-
-.news-section h2 {
-    font-size: 2.5em;
-    color: #8b0000; /* สีแดงเลือด */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    border-bottom: 2px solid #8b0000; /* เส้นขอบสีแดงเลือด */
-    padding-bottom: 10px;
 }
 
 .news-list {
@@ -78,54 +47,32 @@ nav ul li a:hover {
 }
 
 .news-item {
-    background-color: #333; /* พื้นหลังสีเทาเข้ม */
+    background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    border: 1px solid #444; /* กรอบสีเทา */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* เงาดำ */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.news-item:hover {
-    transform: translateY(-5px); /* เลื่อนขึ้นเล็กน้อยเมื่อโฮเวอร์ */
-    box-shadow: 0 0 20px rgba(139, 0, 0, 0.7); /* เงาสีแดงเลือด */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .news-item h3 {
     margin-top: 0;
-    font-size: 1.8em;
-    color: #8b0000; /* สีแดงเลือด */
 }
 
 .news-date {
-    color: #888; /* สีเทาอ่อน */
+    color: #888;
     font-size: 0.9em;
 }
 
 .read-more {
     display: inline-block;
     margin-top: 10px;
-    color: #8b0000; /* สีแดงเลือด */
+    color: #007BFF;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
 }
 
-.read-more:hover {
-    color: #ff0000; /* สีแดงสดเมื่อโฮเวอร์ */
-}
-
-/* Footer */
 footer {
-    background-color: #111; /* พื้นหลังสีดำ */
-    color: #8b0000; /* สีแดงเลือด */
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     margin-top: 20px;
-    border-top: 2px solid #8b0000; /* เส้นขอบสีแดงเลือด */
-}
-
-footer p {
-    margin: 0;
-    font-size: 1.1em;
 }
