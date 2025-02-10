@@ -1,15 +1,14 @@
 /* สีหลักของเว็บไซต์ */
 :root {
-    --primary-color: #ffd700; /* สีทอง */
-    --secondary-color: #000000; /* สีดำ */
-    --text-color-light: #ffffff; /* สีขาวสำหรับข้อความ */
-    --text-color-dark: #000000; /* สีดำสำหรับข้อความ */
+    --primary-color: #001f3f; /* สีกรมท่า */
+    --secondary-color: #ffffff; /* สีขาว */
+    --text-color: #333; /* สีเทาเข้มสำหรับข้อความ */
 }
 
 body {
     font-family: sans-serif;
     background-color: var(--secondary-color);
-    color: var(--text-color-light);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
 }
@@ -22,7 +21,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    color: var(--text-color-dark);
+    color: var(--secondary-color);
     padding: 10px 0;
 }
 
@@ -42,14 +41,13 @@ nav li {
 }
 
 nav a {
-    color: var(--text-color-dark);
+    color: var(--secondary-color);
     text-decoration: none;
     padding: 5px 10px;
 }
 
 nav a:hover {
-    background-color: rgba(0, 0, 0, 0.2); /* สีดำโปร่งแสงเมื่อเมาส์อยู่เหนือลิงก์ */
-    color: var(--text-color-light);
+    background-color: rgba(255, 255, 255, 0.2); /* สีขาวโปร่งแสงเมื่อเมาส์อยู่เหนือลิงก์ */
 }
 
 main {
@@ -67,26 +65,25 @@ main {
 }
 
 .news-item {
-    border: 1px solid #444;
+    border: 1px solid #ddd;
     padding: 20px;
-    background-color: var(--primary-color);
-    color: var(--text-color-dark);
+    background-color: var(--secondary-color);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .news-item h3 {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .news-date {
-    color: #ccc;
+    color: #777;
     margin-bottom: 10px;
 }
 
 .read-more {
     display: inline-block;
-    background-color: var(--secondary-color);
-    color: var(--text-color-light);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -94,9 +91,9 @@ main {
 
 footer {
     background-color: var(--primary-color);
-    color: var(--text-color-dark);
+    color: var(--secondary-color);
     padding: 10px 0;
     text-align: center;
 }
 
-/* ปรับแต่งเพิ่มเติมตามต้องการ */
+/* ปรับแต่งเพิ่มเติมตามต้องการ */*/
